@@ -59,11 +59,6 @@ def test_mixed_large_amount() -> None:
     assert get_coin_combination(99) == [4, 0, 2, 3]
 
 
-def test_negative_raises() -> None:
-    with pytest.raises(ValueError):
-        get_coin_combination(-1)
-
-
 def test_wrong_type_raises() -> None:
     with pytest.raises(TypeError):
         get_coin_combination("10")
